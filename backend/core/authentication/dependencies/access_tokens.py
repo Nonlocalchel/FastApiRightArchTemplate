@@ -13,7 +13,7 @@ from core.models import (
 if TYPE_CHECKING:
     from sqlalchemy.ext.asyncio import AsyncSession
 
-# TODO: вынести strategy.py auth.py access_token.py
+
 async def get_access_tokens_db(
         session: Annotated[
             "AsyncSession",

@@ -8,14 +8,13 @@ from fastapi_users.authentication.strategy.db import (
     DatabaseStrategy,
 )
 
-from api.dependencies.authentication.access_tokens import get_access_tokens_db
+from core.authentication.dependencies.access_tokens import get_access_tokens_db
 from core.config import settings
 
 if TYPE_CHECKING:
     from core.models import AccessToken
 
 
-# TODO: вынести strategy.py auth.py access_token.py
 def get_database_strategy(
         access_token_db: Annotated[
             AccessTokenDatabase["AccessToken"],
