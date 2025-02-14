@@ -4,7 +4,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.models import User
-from core.schemas.users import UserCreate
+from core.schemas.user import UserCreate
 
 
 async def get_all_users(

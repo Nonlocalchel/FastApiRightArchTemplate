@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     from core.models import AccessToken
 
 
-# TODO: вынести strategy.py users.py access_token.py
+# TODO: вынести strategy.py auth.py access_token.py
 def get_database_strategy(
         access_token_db: Annotated[
             AccessTokenDatabase["AccessToken"],
